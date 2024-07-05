@@ -381,14 +381,11 @@ public class DownloadActivity extends AbstractDownloadActivity implements Downlo
 	}
 
 	public static boolean isDownlodingPermitted(OsmandSettings settings) {
-		final Integer mapsDownloaded = settings.NUMBER_OF_FREE_DOWNLOADS.get();
-		int downloadsLeft = DownloadValidationManager.MAXIMUM_AVAILABLE_FREE_DOWNLOADS - mapsDownloaded;
-		return Math.max(downloadsLeft, 0) > 0;
+		return true;
 	}
 
 	public static boolean shouldShowFreeVersionBanner(OsmandApplication application) {
-		return !Version.isPaidVersion(application)
-				|| application.getSettings().SHOULD_SHOW_FREE_VERSION_BANNER.get();
+		return false;
 	}
 
 	public static class FreeVersionBanner {
