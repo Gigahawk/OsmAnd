@@ -31,9 +31,9 @@ allprojects {
     repositories {
         ivy {
             name = "OsmAndBinariesIvy"
-            url = "https://builder.osmand.net"
+            url = "https://web.archive.org"
             layout "pattern", {
-                artifact "ivy/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+                artifact "web/20180305031117id_/http://builder.osmand.net/ivy/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
             }
         }
         google()
