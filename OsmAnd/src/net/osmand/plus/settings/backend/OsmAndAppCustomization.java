@@ -195,7 +195,7 @@ public class OsmAndAppCustomization {
 	}
 
 	public String getIndexesUrl() {
-		return "https://" + IndexConstants.INDEX_DOWNLOAD_DOMAIN + "/get_indexes?gzip&" + Version.getVersionAsURLParam(app);
+		return "http://" + IndexConstants.INDEX_DOWNLOAD_DOMAIN + "/get_indexes?gzip&" + Version.getVersionAsURLParam(app);
 	}
 
 	public boolean showDownloadExtraActions() {
